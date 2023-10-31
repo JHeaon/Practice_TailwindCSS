@@ -1,0 +1,58 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- positioning -->
+    <div class="relative w-1/2 h-12 bg-red-200">
+        <p>Parent Element </p>
+        <div class="absolute bottom-0 right-0 bg-red-500">
+            <p>Absolute Child</p>
+        </div>
+    </div>
+
+
+    <!-- Top left corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+        <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
+
+    <!-- Top right corner -->
+    <div class="relative h-32 w-32 bg-yellow-100 mt-2">
+        <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
+
+    <!-- Bottom left corner -->
+    <div class="relative h-32 w-32 bg-yellow-100 mt-2">
+        <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
+
+    <!-- Bottom right corner -->
+    <div class="relative h-32 w-32 bg-yellow-100 mt-2">
+        <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
+
+    <!-- DisplayClasses -->
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="inline">Quisquam, voluptates.
+        reprehenderit, quibusdam, voluptatum,</span> quia quod voluptas quos doloribus
+        consequatur <span class="inline-block"> this is inline block </span> quas quidem. Quisquam, voluptates.
+    </div>
+
+    <!-- Z-index -->
+    <div class="relative h-36">
+        <div class="absolute left-10 z-10 w-24 h-24 bg-red-300">1</div>
+        <div class="absolute left-20 z-20 w-24 h-24 bg-red-500">2</div>
+        <div class="absolute left-40 w-24 h-24 bg-red-300">3</div>
+        <div class="absolute left-60 w-24 h-24 bg-red-500">4</div>
+        <div class="absolute left-80 w-24 h-24 bg-red-500">5</div>
+    </div>
+
+    <!-- Floats 그림, 글 쓸때 그림을 글자취급 할 때 사용-->
+    <div class="w-1/2 float-left">
+        <img src="" alt="" class="src">
+    </div>
+
+</body>
+</html>
