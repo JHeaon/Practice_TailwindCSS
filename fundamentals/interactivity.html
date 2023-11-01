@@ -1,0 +1,60 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- Hover State Style, 마우스 커서를 댔을때 색 변화-->
+    <button class="bg-black text-white py-3 px-5 rounded-lg m-3
+    hover:bg-orange-500 hover:text-black">
+        submit
+    </button>
+
+    <!-- Focus State Style, 클릭 했을 때, 바뀐색으로 유지-->
+    <button class="bg-black text-white py-3 px-5 rounded-lg m-3
+    focus:bg-green-500 focus:text-black">
+        submit
+    </button>
+
+    <!-- Active State Style, 클릭 시, 잠깐 반짝 거림-->
+    <button class="bg-black text-white py-3 px-5 rounded-lg m-3
+    active:bg-green-500 active:text-black">
+        submit
+    </button>
+
+    <!-- Style base on parent state, 부모 요소가 변화할때 같이 영향 받을 수 있도록 group을 이용한다.-->
+    <a
+            href=""
+            class="group block max-w-xs mx-auto rounded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-500">
+        <h3 class="group-hover:text-white">Card Title</h3>
+        <p>This is the card Text</p>
+    </a>
+
+    <!-- Pesudo Classes-->
+    <ul>
+        <li class="first:bg-red-200">item 1</li>
+        <li class="first:bg-red-200">item 2</li>
+        <li class="first:bg-red-200">item 3</li>
+        <li class="first:bg-red-200">item 4</li>
+        <li class="first:bg-red-200">item 5</li>
+    </ul>
+
+    <!-- Appearance 목록 옆에 뜨는 화살표 삭제-->
+    <select class="appearance-none">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <!-- Cursor 항목에 커서를 대면 커서의 상태를 변화시킴 -->
+    <p class="cursor-pointer">Hello</p>
+    <p class="cursor-wait">Hello</p>
+
+    <!-- User Select, 유저가 선택하는 영역 지정 -->
+    <div class="select-none">Lorem ipsum dolor sit amet.</div>
+    <div class="select-text">Lorem ipsum dolor sit amet.</div>
+    <div class="select-all">Lorem ipsum dolor sit amet.</div>
+    <div class="select-none">Lorem ipsum dolor sit amet.</div>
+
+
+</body>
+</html>
