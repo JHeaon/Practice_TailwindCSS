@@ -1,0 +1,95 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<!-- Flexbox,  items을 통해 행의 위치를 조정함-->
+    <div class="flex h-72 w-full bg-gray-100">
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">01</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">02</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">03</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+    </div>
+
+   <div class="flex flex-col sm:flex-row">
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">01</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">02</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">03</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+    </div>
+
+    <div class="flex items-start h-72 w-full bg-gray-100">
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">01</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">02</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">03</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+    </div>
+
+    <div class="flex items-center h-72 w-full bg-gray-100">
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">01</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">02</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">03</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+    </div>
+
+    <div class="flex items-end h-72 w-full bg-gray-100">
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">01</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">02</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">03</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+    </div>
+
+    <!-- Flexbox and alignment, justify를 통해 열의 위치를 조정함, flex-wrap을 쓰면 자동으로 항목이 내려옴 -->
+    <div class="flex items-center justify-start h-72 w-full bg-red-100">
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">01</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">02</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">03</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+    </div>
+
+    <div class="flex items-center justify-center h-72 w-full bg-red-100">
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">01</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">02</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">03</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+    </div>
+
+    <div class="flex items-center justify-end h-72 w-full bg-red-100">
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">01</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">02</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">03</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+    </div>
+
+    <div class="flex flex-wrap gap-10 items-center justify-start h-72 w-full bg-red-100">
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">01</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">02</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">03</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+        <div class="p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+    </div>
+
+
+    <!-- Flex column, gap and order, gap을 통해 간격 조정 및 order을 통해 아이템 순서 조정 가능-->
+    <div class="flex items-center justify-start h-72 w-full bg-red-100">
+        <div class="order-4 p-10 border border-blue-300 bg-blue-100 m-2">01</div>
+        <div class="order-3 p-10 border border-blue-300 bg-blue-100 m-2">02</div>
+        <div class="order-1 p-10 border border-blue-300 bg-blue-100 m-2">03</div>
+        <div class="order-2 p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+    </div>
+
+
+    <!-- Grow and shrink-->
+    <div class="flex items-center justify-start h-72 w-full bg-red-100">
+        <div class="order-4 p-10 border border-blue-300 bg-blue-100 m-2">01</div>
+        <div class="order-3 p-10 border border-blue-300 bg-blue-100 m-2">02</div>
+        <div class="order-1 p-10 border border-blue-300 bg-blue-100 m-2">03</div>
+        <div class="order-2 p-10 border border-blue-300 bg-blue-100 m-2">04</div>
+    </div>
+
+
+</body>
+</html>
